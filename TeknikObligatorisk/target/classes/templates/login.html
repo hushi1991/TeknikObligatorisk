@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css"
+          href="C:\Users\Hushi\IdeaProjects\TeknikObligatorisk\src\main\resources\static\style.css"
+          th:href="@{style.css}"/>
+</head>
+<body>
+
+    <div>
+        <form th:object="${user}" th:action="@{/login}" method="post">
+            <h2>LOGIN</h2>
+
+            <div>
+                <input th:field="*{username}" type="text" name="username" id="username" placeholder="Username" required="true"/>
+            </div>
+            <div>
+                <input th:field="*{password}" type="text" name="password" id="password" placeholder="Password" required="true"/>
+            </div>
+
+            <div>
+                <div>
+                    <input type="submit" value="SUBMIT"/>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+</html>

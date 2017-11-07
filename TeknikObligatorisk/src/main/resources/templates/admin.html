@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css"
+          href="C:\Users\Hushi\IdeaProjects\TeknikObligatorisk\src\main\resources\static\style.css"
+          th:href="@{style.css}"/>
+</head>
+<body>
+<h1> Hej Admin</h1>
+
+<form th:action="@{/admin}" method="post" th:object="${blog}">
+
+    <input type="text" th:field="*{post}" id="desc" />
+
+    <input type="submit" value="Send" />
+
+</form>
+
+
+
+
+</body>
+</html>
