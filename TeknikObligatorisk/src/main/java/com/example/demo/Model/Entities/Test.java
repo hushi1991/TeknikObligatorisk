@@ -9,7 +9,7 @@ public class Test {
 
 
     public Test(String tekst) {
-        this.tekst = "Hej dette er en test";
+        this.tekst = "Hej dette er en test. Goddag";
     }
 
 
